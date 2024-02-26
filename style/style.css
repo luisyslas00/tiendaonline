@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Mobile */
+nav{
+    background-color:rgb(249, 249, 96);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+.menuMobile a img{
+    width: 110px;
+    height: auto;
+}
+
+.menuMobile{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    background-color: rgb(249, 249, 96);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: none;
+}
+
+.menu-active{
+    display: inline-block;
+    list-style-type: none;
+    justify-content: stretch; 
+}
+
+.menu li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: black;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* li a:hover{
+    color:white;
+    background-color: black;
+} */
+
+.encabezado{
+    background-image: url("../assets/images/encabezado.webp");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.encabezado h1{
+    color: white;
+    text-align: center;
+}
+
+.btnEncabezado{
+    padding: 3%;
+    border-radius: 10px;
+    margin-top: 5%;
+    background-color: rgb(249, 249, 96);
+    text-decoration: none;
+    color: black;
+}
+
+/* Sección más vendidos */
+
+.masVendidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.contenedorVendidos{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorProducto{
+    margin: 2%;
+    width: 250px;
+   /*  border:solid black; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contenedorProducto img{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.contenedorProducto a{
+    text-decoration: none;
+    color: black;
+    background-color:rgb(249, 249, 96);
+    padding: 4%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.contenedorProducto a:hover{
+    color: white;
+}
+
+/* Sección novedades */
+
+.novedades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+/* Redes Sociales */
+
+.redesSociales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.redesSociales ul{
+    display: flex;
+    list-style: none;
+}
+
+.redesSociales h5{
+    margin: 1rem;
+}
+
+.redesSociales ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin: 0.5rem;
+}
+
+.redesSociales ul li a i:hover{
+    color: rgb(249, 249, 96);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.686);
+}
+
+/* Escritorio */
+
+@media (1199px < width) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menuMobile i{
+        display: none;
+    }
+    .menu{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .menu li a{
+        margin: 0 1rem;
+    }
+    .menu li a:hover{
+        color: white;
+    }
+    .btnEncabezado{
+        padding: 2%;
+    }
+    .btnEncabezado:hover{
+        color: white;
+    }
+    /* Más Vendidos */
+
+    .contenedorVendidos{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedorNovedades{
+        display: flex;
+        flex-direction: row;
+    }
+}
